@@ -1,6 +1,11 @@
 from fastapi import FastAPI
-app = FastAPI()
 
-@app.get('/')
+app = FastAPI(title="ClasificaAI Backend")
+
+@app.get("/")
 def root():
-    return {'msg': 'ClasificaAI backend simple funcionando'}
+    return {"msg": "Backend ClasificaAI funcionando"}
+
+@app.get("/health")
+def health():
+    return {"ok": True}

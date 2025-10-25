@@ -5,3 +5,6 @@ SQLAlchemy
 psycopg[binary]
 python-multipart
 PyYAML
+psycopg
+google-generativeai
+pydantic
